@@ -32,6 +32,13 @@ flutter run -d chrome --dart-define-from-file=env/openai.local.json
 
 Do not commit real API keys to repository files.
 
+## GitHub Actions secrets
+
+For `/Users/user/Documents/startup3/.github/workflows/deploy.yml`, configure:
+
+- `OPENAI_API_KEY` (required)
+- `OPENAI_MODEL` (optional, default `gpt-4.1`)
+
 ## Behavior without key
 
 If `OPENAI_API_KEY` is missing, the app shows an in-app error and does not call OpenAI.
